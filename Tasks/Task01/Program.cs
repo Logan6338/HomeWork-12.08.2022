@@ -7,9 +7,9 @@
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 string copy = number.ToString();
-Console.WriteLine(CheckingNumber(copy));
+Console.WriteLine(ReverseString(copy));
 
-string CheckingNumber(string number)
+string ReverseString(string number)
 {
   string copy = "";
   for (int i = number.Length - 1; i >= 0; i--)
@@ -18,7 +18,7 @@ string CheckingNumber(string number)
   }
   return copy; 
 }
-string result = CheckingNumber(copy);
+string result = ReverseString(copy);
 
 if(result == copy)
 {
